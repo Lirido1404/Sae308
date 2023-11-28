@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.grid-template-areas {
+  grid-template-areas: "s1 main s2";
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 800px 1fr;
+}
+
+.grid-s1 {
+  grid-area: s1;
+}
+
+.grid-main{
+  grid-area: main;
+}
+
+.grid-s2{
+  grid-area: s2;
+}

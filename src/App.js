@@ -1,7 +1,9 @@
+import Mainlayout from "./components/Mainlayout";
+
 function App() {
   return (
     <div className="App">
-      <p className="h-24 w-12">Hello</p>
+      <Mainlayout/>
     </div>
   );
 }
