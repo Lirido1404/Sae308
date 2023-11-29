@@ -2,7 +2,7 @@ import React from 'react'
 
 const AsideRight = () => {
   return (
-    <div>AsideRight</div>
+    <div className='z-10 relative'>AsideRight</div>
   )
 }
 
