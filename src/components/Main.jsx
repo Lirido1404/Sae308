@@ -1,6 +1,8 @@
 import sources from '../icons/sources.svg';
 import React, { useState, useMemo, useRef } from 'react'
 import TinderCard from 'react-tinder-card'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const db = [
   {
@@ -99,9 +101,13 @@ const Main = () => {
     await childRefs[newIndex].current.restoreCard()
   }
   
+  const notify = () =>{
+    toast("hey");
+  }
 
   return (
     <div className='flex justify-center align-middle flex-col items-center'>
+      
       <div className='cardContainer'>
         {db.map((Question, index) => (
           <TinderCard
@@ -141,6 +147,8 @@ const Main = () => {
           Swipe a card or press a button to get Restore Card button visible!
         </h2>
       )}
+      
+        <ToastContainer />
     </div>
   )
 }
