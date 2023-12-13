@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* oui */
-
 * {
   user-select: none;
 }
